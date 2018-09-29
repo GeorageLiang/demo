@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    min-width: 320px;
+    position: relative;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Arial,'Heiti SC','Microsoft Yahei','Open Sans', Verdana, 'Lantinghei TC','Hiragino Kaku Gothic ProN','Heiti TC',sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a,ul,li,p,span,div,table,tr,th,td,i,h1,h2,h3,section,ol,pre,option {
+    margin: 0;padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    -webkit-touch-callout: none;
+}
+input {
+    outline: none;
+}
+em{
+    font-style: normal;
+}
+p{
+    margin: 0;
+}
+.clear {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+    &:before, &:after { 
+        display: table; 
+        content: ""; 
+    }
+    &:after { clear: both; }  
+} 
+ 
+.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.fl{float: left;}
+.fr{float: right;}
+
+.hide{
+    display: none;
+}
+
+.underline-no{
+    text-decoration: none!important;
+}
+
+#toastModal {
+    width: 76%;
+    position: fixed;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.7);
+    background-repeat: round;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 10%;
+    margin: -22.5px 0 0 0;
+    padding: 14px 2%;
+    
+    span {
+        font-family: Helvetica;
+        color: #fff;
+    }
+    
+}
+.pic-fade-Out {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.pic-fade-In {
+    -webkit-transition: opacity .35s;
+    transition: opacity .35s;
+    opacity: 1;
+    -moz-transition: opacity .35s;
+    -o-transition: opacity .35s;
+    filter: alpha(opacity=100);
+}
+div,img{-webkit-tap-lighthigh-color:transparent;-webkit-tap-highlight-color: transparent;}
